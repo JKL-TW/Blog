@@ -1,0 +1,11 @@
+[tw]
+title = "張鎧麟(Carey)"
+weight = 1
+LanguageName = "TW"
+contentDir = "content/tw"
+
+[en]
+title = "張鎧麟(Carey)"
+weight = 2
+LanguageName = "EN"
+contentDir = "content/english"

@@ -1,0 +1,93 @@
+# Blog Information
+baseURL = "careyzhang.github.io"
+languageCode = "zh-tw"
+title = "Carey Chang"
+theme = "pure"
+license = "MIT"
+paginate = 8
+
+# Blog Option
+[params]
+  author = "Carey Chang"
+  description = " "
+  menu_item_separator = "</br>"
+  [[params.social]]
+    icon = "github"
+    name = "Github"
+    url = "https://github.com/CareyZhang"
+  [[params.social]]
+    icon = "twitter"
+    name = "Twitter"
+    url = "https://twitter.com/KaiLinZhangTW"
+  [[params.social]]
+    icon = "facebook"
+    name = "Facebook"
+    url = "https://www.facebook.com/klin0114/"
+  [[params.social]]
+    icon = "instagram"
+    name = "Instagram"
+    url = "https://www.instagram.com/klin0114/"
+  [[params.social]]
+    icon = "linkedin"
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/in/klin0114/"
+
+# Blog Configuration
+disablePathToLower = true
+relativeURLs = true
+uglyURLs = false
+
+[permalinks]
+  categories = "/categories/:slug/"
+  tags = "/tags/:slug/"
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+[frontmatter]
+  lastmod = ["lastmod", ":git", ":fileModTime", ":default"]
+
+defaultContentLanguage = "tw"
+defaultContentLanguageInSubdir = false
+hasCJKLanguage = true
+enableEmoji = true
+enableGitInfo = true
+enableRobotsTXT = false
+
+enableInlineShortcodes = true
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsOptions = "linenos=table"
+
+pluralizeListTitles = false
+footnoteReturnLinkContents = "Back ↩"
+
+[blackfriday]
+  smartpants = false
+  hrefTargetBlank = true
+  extensionmask = ["hardLineBreak", "backslashLineBreak"]
+
+# Menu
+[[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+[[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 2
+[[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tag/"
+    weight = 3
+
+# Development Configuration
+newContentEditor = ""
+buildDrafts = false
+buildExpired = false
+buildFuture = false
+canonifyURLs = false
+summaryLength = 1000
